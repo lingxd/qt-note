@@ -26,6 +26,16 @@
     <string>PushButton</string>
    </property>
   </widget>
+  <widget class="QLCDNumber" name="lcdNumber">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>410</y>
+     <width>231</width>
+     <height>61</height>
+    </rect>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

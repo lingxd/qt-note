@@ -15,11 +15,20 @@ public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
 
+public Q_SLOTS:
+    void slotUpdateLED();
+
+
 protected:
     void keyPressEvent(QKeyEvent *event) override;
+    void timerEvent(QTimerEvent* event) override;
 
 private:
     Ui::Widget *ui;
+
+    int id1;
+    int id2;
+    int id3;
 
 private:
     Q_DISABLE_COPY(Widget);
